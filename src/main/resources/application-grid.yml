@@ -1,0 +1,3 @@
+grid:
+  host: localhost
+  port: 4444

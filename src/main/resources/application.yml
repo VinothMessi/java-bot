@@ -1,0 +1,23 @@
+browser: chrome
+timeOut: 30
+
+project:
+  name: Test Automation Bot
+  job: Functional Testing
+  appUrl: https://vins-udemy.s3.amazonaws.com/sb/visa/udemy-visa.html
+  appTitle: VISA Registration Form
+  header: VISA Registration Form
+  subHeader: Fill out the form carefully for registration
+
+report:
+  name: Test_Automation_Bot
+  path: ${user.dir}/results/reports/
+
+snapshot:
+  path: ${user.dir}/results/reports/snaps/
+
+spring:
+  profiles:
+    active: local
+  jpa:
+    defer-datasource-initialization: true
