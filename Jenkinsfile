@@ -23,7 +23,6 @@ pipeline {
           }
           steps {
             echo "Integration Testing ${agentURL}"
-            sh 'mvn test'
           }
         }
 
