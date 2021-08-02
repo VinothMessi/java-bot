@@ -9,5 +9,25 @@ pipeline {
       }
     }
 
+    stage('Test') {
+      parallel {
+        stage('UnitTest') {
+          steps {
+            echo 'Unit Testing'
+          }
+        }
+
+        stage('IntegrationTest') {
+          environment {
+            agentURL = 'http://localhost:4444/wb/hub'
+          }
+          steps {
+            echo 'Integration Testing ${agentURL}'
+          }
+        }
+
+      }
+    }
+
   }
 }
