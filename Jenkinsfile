@@ -32,6 +32,7 @@ pipeline {
     stage('Deployment') {
       steps {
         echo 'Deployment process'
+        input 'Do you want to deploy?'
       }
     }
 
