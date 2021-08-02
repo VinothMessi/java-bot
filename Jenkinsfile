@@ -30,6 +30,9 @@ pipeline {
     }
 
     stage('Deployment') {
+      when {
+        branch 'master'
+      }
       steps {
         echo 'Deployment process'
         input 'Do you want to deploy?'
