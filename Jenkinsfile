@@ -22,7 +22,7 @@ pipeline {
             agentURL = 'http://localhost:4444/wb/hub'
           }
           steps {
-            echo 'Integration Testing ${agentURL}'
+            echo 'Integration Testing $agentURL'
           }
         }
 
