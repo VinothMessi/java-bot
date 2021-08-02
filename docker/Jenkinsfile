@@ -5,8 +5,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'java-version'
-        sh 'Get working directory'
+        sh 'java -version'
+        echo "Get working directory"
         sh 'pwd'
       }
     }
